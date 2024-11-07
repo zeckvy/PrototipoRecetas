@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Barra de búsqueda -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#1F1F1F"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:radius="12dp">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar receta..."
+            android:textColorHint="#777777"
+            android:background="@android:color/transparent"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp"/>
+
+        <ImageView
+            android:id="@+id/searchButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_search"
+            android:tint="#FFA500"
+            android:contentDescription="Buscar"/>
+    </LinearLayout>
+
+    <!-- Receta: Arroz con Huevo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arroz con Huevo"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imgArrozHuevo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/arroz_con_huevo"
+        android:contentDescription="Arroz con Huevo"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Receta: Pan con Queso -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pan con Queso"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imgPanQueso"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pan_con_queso"
+        android:contentDescription="Pan con Queso"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Receta: Carne Asada -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carne Asada"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imgCarneAsada"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/carne_asada"
+        android:contentDescription="Carne Asada" />
+</LinearLayout>
